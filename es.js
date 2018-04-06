@@ -13,36 +13,45 @@ let elizabethSanger = {
       infrastructure: "",
       healthcare: "Health Care should be accessible and affordable and be high quality to all.",
       crimeandenforcement: "",
-    },
+    }
+}
     
     // Donations
-    donations: "https://www.paypal.com/us/home",
+    donations: {url: "https://www.paypal.com/us/home"}
 
     // Calendar 
-     calendar: [
-         'January',
-         'February',
-         'March',
-         'April',
-         'May', 
-         'June', 
-         'July', 
-         'August', 
-         'September',
-         'October', 
-         'November', 
-         'December'
-     ],
+    const calendarEvents = Object.create({}, {
+        month: {
+            enumerable: true,
+            writable: false,
+            value: "April" 
+        },
+        date: {
+            enumerable: true,
+            writable: false,
+            value: "17th" 
+        },
+        location: {
+            enumerable: true,
+            writable: false,
+            value: "Five Points Pizza" 
+        },
+        time: {
+            enumerable: true,
+            writable: false,
+            value: "4:30pm" 
+        },
+    })
 
     // Volunteer Info
-    volunteer: {
+    const volunteer = Object.create({}, {
         name: {
             enumerable: true,
-            value: "Elizabeth Sanger",
+            value: "Jessica Swift",
         },
         address: {
             enumerable: true,
-            value: "123 Old Hickory",
+            value: "123 Five Points Dr.",
         },
         phonenumber: {
             enumerable: true,
@@ -56,22 +65,31 @@ let elizabethSanger = {
             enumerable: true,
             value: "",
         }
-    },
+    })
 
-    // Bio
-    bio: "",
+    // // Bio
+    // bio: "",
 
      // Images
-     head: "",
-     family: "",
-     constituents: "",
+     const images = Object.create ({}, {
+        headshot: {
+            writable: true,
+            value: "",
+        },
+        family: {
+            writable: true,
+            value: "",
+        },
+        constituents: {
+            writable: true,
+            value: "",
+        }
+    })
 
     // Mission statement
-    mission: "",
+    // mission: "",
 
-    // Registering to vote 
-    vote: ""
-
-}
+    // // Registering to vote 
+    // vote: "",
 
 console.log(elizabethSanger);
